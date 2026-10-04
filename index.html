@@ -29,6 +29,62 @@ html,body{max-width:100%;overflow-x:hidden}
  .sample-meta small{white-space:normal;overflow-wrap:anywhere}
  .ref-colors{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+/* === MOBILE PREVIEW FINAL FIX === */
+@media(max-width:760px){
+
+  .preview-wrap{
+    position:relative !important;
+    display:block !important;
+    width:100% !important;
+    min-height:238px !important;
+    overflow:hidden !important;
+  }
+
+  .preview-placeholder{
+    position:absolute !important;
+    inset:0 !important;
+
+    width:auto !important;
+    min-width:0 !important;
+    max-width:none !important;
+
+    margin:0 !important;
+    padding:24px !important;
+
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    text-align:center !important;
+    white-space:normal !important;
+    word-break:keep-all !important;
+    overflow-wrap:break-word !important;
+    writing-mode:horizontal-tb !important;
+
+    line-height:1.7 !important;
+  }
+
+  .preview-placeholder b{
+    display:block !important;
+    width:100% !important;
+    text-align:center !important;
+    white-space:normal !important;
+    writing-mode:horizontal-tb !important;
+  }
+
+  .preview-wrap canvas:not([hidden]){
+    position:relative !important;
+    z-index:2 !important;
+    display:block !important;
+    width:100% !important;
+    height:auto !important;
+  }
+
+  .pick-marker{
+    z-index:3 !important;
+  }
+}
 </style></head><body>
 <nav class="nav"><div class="wrap navin"><div class="brand">DR.<b>PAD</b></div><div class="menu"><a href="#about">제품소개</a><a href="#signals">건강가이드</a><a href="#camera">카메라판독</a><a href="#how">사용방법</a><a href="#safety">주의사항</a></div></div></nav>
 <header class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">발색을 이용한 반려동물 건강 모니터링 디바이스</div><h1>소변의 색 변화로<br>매일 확인하는 건강 신호</h1><p>닥터패드는 pH, 요당, 잠혈, 단백질 반응을 보호자가 직관적으로 확인할 수 있도록 설계한 기능성 배변패드 컨셉입니다.</p><div class="hero-actions"><a class="btn" href="#signals">4가지 결과 가이드 보기</a><a class="btn secondary" href="#signals">내 결과 판정하기</a></div><div class="quick-check"><button onclick="openDetail('ph')">pH 상세</button><button onclick="openDetail('glu')">요당 상세</button><button onclick="openDetail('blood')">잠혈 상세</button><button onclick="openDetail('pro')">단백질 상세</button></div></div><div class="concept"><div class="concept-top"><div><div class="concept-logo">DR.PAD</div><small>NEW PACKAGE CONCEPT / IMAGE FREE</small></div><div class="concept-mark"></div></div><div><b>SMART URINE CHECK PAD</b><p style="color:#666">기존 상세페이지의 패키지 이미지는 사용하지 않고, 신규 패키지 디자인을 적용할 수 있도록 제품 영역을 중립적인 컨셉 UI로 구성했습니다.</p></div><div class="concept-grid"><div class="mini"><i style="background:#69c9c5"></i>pH</div><div class="mini"><i style="background:#85c85b"></i>GLUCOSE</div><div class="mini"><i style="background:#dc5460"></i>BLOOD</div><div class="mini"><i style="background:#6b5bd2"></i>PROTEIN</div></div></div></div></header>
